@@ -1,0 +1,51 @@
+#productForm fieldset {
+  border: none;
+}
+
+#productForm legend {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#productForm {
+  max-width: 400px;
+  margin: 18px auto;
+  background-color: #fff;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#productForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#productForm input[type="text"],
+#productForm input[type="date"],
+#productForm input[type="number"],
+#productForm input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  outline: none;
+}
+
+#productForm button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #016072;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#productForm button[type="submit"]:hover {
+  background-color: #0087a1;
+}

@@ -1,0 +1,89 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+  color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px; /* Ajuste o espaçamento conforme necessário */
+}
+
+.logo-container img {
+  width: 75px; /* Ajuste o tamanho conforme necessário */
+}
+
+form {
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Permite o posicionamento absoluto do logo-container */
+}
+
+h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #016072;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  margin-top: 15px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0087a1;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 5px;
+  display: none;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.error {
+  font-size: 0.8em;
+  color: red;
+  font-weight: lighter;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classe VIII</title>
+    <link rel="icon" href="/img/icon-bsup.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones -->
+    <script
+      src="https://kit.fontawesome.com/6269b01a6c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Estilização CSS -->
+    <link rel="stylesheet" href="/home/home.css" />
+    <link rel="stylesheet" type="text/css" href="/cabeçalho/cabeçalho.css" />
+    <link rel="stylesheet" type="text/css" href="/presets/presets.css" />
+  </head>
+
+  <header>
+    <div class="logo">
+      <a href="/home/home.html"
+        ><img src="/img/logo-bsup.png" alt="Brasão 3ª B Sup"
+      /></a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="O que deseja encontrar?" />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/farmaco/farmaco.html">Farmacológico</a></li>
+        <li><a href="/odonto/odonto.html">Odontológico</a></li>
+        <li><a href="/hospitalar/hospitalar.html">Hospitalar</a></li>
+        <li>
+          <button class="registration-button" onclick="redirectToRegister()">
+            Cadastrar Produto
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <main>
+      <div class="banner-container">
+        <div class="banner-content">
+          <img src="/img/logo-bsup.png" alt="Logo" class="logo" />
+          <h2 class="banner-text">Classe VIII</h2>
+          <p class="banner-subtext">Aqui se trabalha forte, suprir!</p>
+        </div>
+      </div>
+
+      <section class="medicines-section">
+        <h2 class="section-title">Todos os medicamentos</h2>
+        <ul class="medicines-list">
+          <li class="medicine-item">
+            <a href="#" class="medicine-link">
+              <img
+                src="/img/paracetamol.png"
+                alt="Paracetamol"
+                class="medicine-img"
+              />
+              <h3 class="medicine-name">Paracetamol</h3>
+              <p class="medicine-price">Ver</p>
+            </a>
+          </li>
+          <li class="medicine-item">
+            <a href="#" class="medicine-link">
+              <img
+                src="/img/paracetamol.png"
+                alt="Paracetamol"
+                class="medicine-img"
+              />
+              <h3 class="medicine-name">Paracetamol</h3>
+              <p class="medicine-price">Ver</p>
+            </a>
+          </li>
+          <li class="medicine-item">
+            <a href="#" class="medicine-link">
+              <img
+                src="/img/paracetamol.png"
+                alt="Paracetamol"
+                class="medicine-img"
+              />
+              <h3 class="medicine-name">Paracetamol</h3>
+              <p class="medicine-price">Ver</p>
+            </a>
+          </li>
+          <!-- Adicione mais cards aqui -->
+        </ul>
+      </section>
+
+      <!-- Scripts JS -->
+      <script src="register-product.js"></script>
+    </main>
+  </body>
+</html>
