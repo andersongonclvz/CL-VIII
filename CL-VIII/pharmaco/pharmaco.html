@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classe VIII</title>
+    <link rel="icon" href="/img/icon-bsup.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones -->
+    <script
+      src="https://kit.fontawesome.com/6269b01a6c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Estilização CSS -->
+    <link rel="stylesheet" href="/pharmaco/pharmaco.css" />
+    <link rel="stylesheet" type="text/css" href="/header/header.css" />
+    <link rel="stylesheet" type="text/css" href="/presets/presets.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/home/home.html"
+          ><img src="/img/logo-bsup.png" alt="Brasão 3ª B Sup"
+        /></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="O que deseja encontrar?" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a class="selected" href="/pharmaco/pharmaco.html">Farmacológico</a>
+          </li>
+          <li><a href="/dental/dental.html">Odontológico</a></li>
+          <li><a href="/hospital/hospital.html">Hospitalar</a></li>
+          <li>
+            <button class="registration-button" onclick="redirectToRegister()">
+              Cadastrar Produto
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="medicines-section">
+        <h2 class="section-title"><span class="square"></span>Farmacológico</h2>
+        <ul class="medicines-list">
+          <!-- Cards de medicamentos serão adicionados dinamicamente aqui -->
+        </ul>
+      </section>
+    </main>
+
+    <!-- Scripts JS -->
+    <script src="/pharmaco/register-product.js"></script>
+    <script src="/pharmaco/medicine-list.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Produto</title>
+    <link rel="icon" href="/img/icon-bsup.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones -->
+    <script
+      src="https://kit.fontawesome.com/6269b01a6c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Estilização CSS -->
+    <link rel="stylesheet" type="text/css" href="/register/register.css" />
+    <link rel="stylesheet" type="text/css" href="/header/header.css" />
+    <link rel="stylesheet" type="text/css" href="/presets/presets.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/home/home.html">
+          <img src="/img/logo-bsup.png" alt="Brasão 3ª B Sup" />
+        </a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="O que deseja encontrar?" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/pharmaco/pharmaco.html">Farmacológico</a></li>
+          <li><a href="/dental/dental.html">Odontológico</a></li>
+          <li><a href="/hospital/hospital.html">Hospitalar</a></li>
+          <li>
+            <button class="registration-button" onclick="redirectToRegister()">
+              Cadastrar Produto
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="table-container">
+        <form id="productForm">
+          <div class="img-table"></div>
+          <fieldset>
+            <legend>Cadastrar Produto</legend>
+            <label for="productName">Nome do Produto:</label>
+            <input
+              type="text"
+              id="productName"
+              name="productName"
+              required
+              autocomplete="name"
+            />
+
+            <label for="productLote">Lote:</label>
+            <input
+              type="text"
+              id="productLote"
+              name="productLote"
+              required
+              autocomplete="organization"
+            />
+
+            <label for="productFabricacao">Fabricação:</label>
+            <input
+              type="date"
+              id="productFabricacao"
+              name="productFabricacao"
+              required
+              autocomplete="off"
+            />
+
+            <label for="productValidade">Validade:</label>
+            <input
+              type="date"
+              id="productValidade"
+              name="productValidade"
+              required
+              autocomplete="off"
+            />
+
+            <label for="productQuantidade">Quantidade:</label>
+            <input
+              type="number"
+              id="productQuantidade"
+              name="productQuantidade"
+              min="0"
+              step="1"
+              required
+              autocomplete="quantity"
+            />
+
+            <label for="productLocal">Local:</label>
+            <input
+              type="text"
+              id="productLocal"
+              name="productLocal"
+              required
+              autocomplete="street-address"
+            />
+
+            <label for="productImage">Imagem:</label>
+            <input
+              type="file"
+              id="productImage"
+              name="productImage"
+              accept="image/*"
+              required
+              autocomplete="off"
+            />
+
+            <button type="submit">Cadastrar</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <!-- Scripts JS -->
+    <script src="/register/register.js"></script>
+  </body>
+</html>

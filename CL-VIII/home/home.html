@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classe VIII</title>
+    <link rel="icon" href="/img/icon-bsup.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/home/home.css" />
+    <link rel="stylesheet" type="text/css" href="/header/header.css" />
+    <link rel="stylesheet" type="text/css" href="/presets/presets.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/home/home.html"
+          ><img src="/img/logo-bsup.png" alt="Brasão 3ª B Sup"
+        /></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="O que deseja encontrar?" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/pharmaco/pharmaco.html">Farmacológico</a></li>
+          <li><a href="/dental/dental.html">Odontológico</a></li>
+          <li><a href="/hospital/hospital.html">Hospitalar</a></li>
+          <li>
+            <button class="registration-button" onclick="redirectToRegister()">
+              Cadastrar Produto
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner-container">
+        <div class="banner-content">
+          <img src="/img/logo-bsup.png" alt="Logo" />
+          <h2 class="banner-text">Classe VIII</h2>
+          <p class="banner-subtext">Aqui se trabalha forte, suprir!</p>
+        </div>
+      </div>
+
+      <section class="medicines-section">
+        <h2 class="section-title">Medicamentos</h2>
+        <select id="selection">
+          <option value="all">Todos</option>
+          <option value="pharmaco">Farmacológico</option>
+          <option value="dental">Odontológico</option>
+          <option value="hospital">Hospitalar</option>
+        </select>
+        <ul id="lista-de-medicamentos" class="medicines-list">
+          <!-- Adicionar os elementos de medicamentos
+            dinamicamente com JavaScript. -->
+
+    <!-- Scripts JS -->
+    <script
+      src="https://kit.fontawesome.com/6269b01a6c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/home/register-product.js"></script>
+    <script src="/home/medicine-list.js"></script>
+    <script src="/home/filter.js"></script>
+  </body>
+</html>

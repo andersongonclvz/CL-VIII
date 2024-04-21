@@ -1,0 +1,91 @@
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-color);
+  color: #fff;
+  padding: 10px 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do logotipo */
+.logo a img {
+  width: 70px;
+  margin-top: 5px;
+}
+
+/* Estilo da barra de pesquisa */
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 25px;
+}
+
+.search-bar input[type="text"] {
+  width: 40%;
+  height: 45px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--grey);
+  border-radius: 5px 0 0 5px;
+  padding: 12px 20px; /* Unifiquei as propriedades de padding */
+  background-color: var(--light-gray);
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  background-color: var(--green-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  transition: background-color 0.3s ease; /* Transição apenas na mudança de cor de fundo */
+  background-color: #0087a1;
+}
+
+.search-bar button i {
+  font-size: 1rem;
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav a {
+  color: var(--letter-font);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: var(--green-color);
+  transition: color 0.3s ease-in; /* Transição apenas na mudança de cor do texto */
+  text-decoration: underline;
+}
+
+/* Estilo do botão de registro */
+.registration-button {
+  background-color: var(--green-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.registration-button:hover {
+  transition: background-color 0.5s ease; /* Transição apenas na mudança de cor de fundo */
+  background-color: #0087a1;
+}

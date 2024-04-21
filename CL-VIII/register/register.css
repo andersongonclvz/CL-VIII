@@ -1,0 +1,63 @@
+#productForm {
+  display: flex;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#productForm .img-table {
+  background-image: url(/img/medicines.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  border-radius: 15px;
+  margin-right: 50px;
+}
+
+#productForm fieldset {
+  flex: 1;
+  border: none;
+}
+
+#productForm legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#productForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#productForm input[type="text"],
+#productForm input[type="date"],
+#productForm input[type="number"],
+#productForm input[type="file"] {
+  width: calc(100% - 16px); /* Leva em consideração o padding */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#productForm button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #016072;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#productForm button[type="submit"]:hover {
+  background-color: #0087a1;
+}

@@ -1,0 +1,117 @@
+/* Banner 3ª B Sup */
+.banner-container {
+  height: 700px;
+  background-color: var(--green-color);
+  background-image: url("/img/3b-sup-banner-edit.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-content img {
+  width: 90px;
+  height: auto;
+}
+
+.banner-text {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  color: var(--white-color);
+}
+
+.banner-subtext {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+/* Medicamentos */
+.medicines-section {
+  margin: 50px 150px;
+  color: var(--green-color);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #252525;
+}
+
+#selection {
+  appearance: none;
+  background-color: var(--green-color);
+  background-image: url("data:image/svg+xml;utf8,<svg fill='lightgray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.3em top 50%, 0 0;
+  border: none;
+  border-radius: 5px;
+  color: #f3f0ef;
+  font-size: 1rem;
+  padding: 0.5em 2em 0.5em 1em;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+#selection:focus {
+  outline: none;
+}
+
+#selection option {
+  background-color: #f3f0ef; /* Altera a cor de fundo das categorias para branco */
+  color: #6b7087;
+}
+
+.medicines-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.medicine-item {
+  flex-basis: calc(33.333% - 2rem);
+  margin-right: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.medicine-item:hover {
+  transform: translateY(-2px);
+}
+
+.medicine-link {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 1rem;
+}
+
+.medicine-img {
+  width: 35%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.medicine-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.medicine-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--green-color);
+}
