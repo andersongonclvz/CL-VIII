@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classe VIII</title>
+    <link rel="icon" href="/img/icon-bsup.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones -->
+    <script
+      src="https://kit.fontawesome.com/6269b01a6c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Estilização CSS -->
+    <link rel="stylesheet" href="/pharmaco/pharmaco.css" />
+    <link rel="stylesheet" type="text/css" href="/header/header.css" />
+    <link rel="stylesheet" type="text/css" href="/presets/presets.css" />
+    <link
+      rel="stylesheet"
+      href="/pharmaco/medicine-tab/adenosina/adenosina.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/home/home.html"
+          ><img src="/img/logo-bsup.png" alt="Brasão 3ª B Sup"
+        /></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="O que deseja encontrar?" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a class="selected" href="/pharmaco/pharmaco.html">Farmacológico</a>
+          </li>
+          <li><a href="/dental/dental.html">Odontológico</a></li>
+          <li><a href="/hospital/hospital.html">Hospitalar</a></li>
+          <li>
+            <button class="registration-button" onclick="redirectToRegister()">
+              Cadastrar Produto
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Conteúdo da página de amostra do produto -->
+    <div class="container">
+      <img src="/img/adenosina.png" alt="Produto" class="product-image" />
+      <div class="product-info">
+        <h1>Adenosina</h1>
+        <p>
+          A adenosina é um nucleosídeo, formado pela união de uma adenina e uma
+          ribose. É uma purina endógena sintetizada da degradação de aminoácidos
+          como metionina, treonina, valina e isoleucina assim como AMP.
+        </p>
+        <ul>
+          <li>
+            <label for="lotes">Lotes Disponíveis:</label>
+            <select id="lotes" name="lotes">
+              <option value="lote1">Lote 1</option>
+              <option value="lote2">Lote 2</option>
+              <option value="lote3">Lote 3</option>
+              <!-- Adicione mais opções conforme necessário -->
+            </select>
+          </li>
+          <li>Prateleira: A1</li>
+          <li>Categoria: Farmacológico</li>
+          <li>Quantidade Disponível: 100 unidades</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
